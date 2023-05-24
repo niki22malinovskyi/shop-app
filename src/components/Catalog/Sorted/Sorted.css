@@ -1,0 +1,71 @@
+.sorted {
+    position: absolute;
+    top: 67px;
+    right: 0;
+    background-color: #fff;
+    width: 160px;
+    padding: 10px;
+    z-index: 10;
+    border: 1px solid #E2E2E2;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity .4s ease;
+    z-index: -1;
+}
+
+.sorted.active {
+    opacity: 1;
+    transition: opacity .4s ease;
+    z-index: 1;
+}
+
+.sorted__title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #0E49B5;
+    margin-bottom: 15px;
+}
+
+.sorted__btn button {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    background: #EDF3FF;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #102243;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.sorted__btn__up::before {
+    content: '';
+    height: 6px;
+    width: 10px;
+    position: absolute;
+    left: 10px; 
+    top: 50%;
+    background-image: url(../../../assets/img/arrow_up.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    transform: translate(0, -50%);
+}
+
+.sorted__btn__down::before {
+    content: '';
+    height: 6px;
+    width: 10px;
+    position: absolute;
+    left: 10px; 
+    top: 50%;
+    background-image: url(../../../assets/img/arrow_down.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    transform: translate(0, -50%);
+}

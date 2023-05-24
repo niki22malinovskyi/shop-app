@@ -1,0 +1,222 @@
+.header__shop {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 300px;
+    opacity: 0;
+    transition: opacity .4s ease;
+    z-index: -1;
+}
+
+.header__shop.active {
+    opacity: 1;
+    transition: opacity .4s ease;
+    z-index: 1;
+}
+
+.header__wrap__shop {
+    padding-top: 25px;
+    border: 1px solid #E2E2E2;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    z-index: 1000;
+}
+
+.header__shop__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.header__shop__item {
+    padding: 15px 25px;
+    border-bottom: 1px solid #C4C4C4;
+    position: relative;
+    z-index: 4;
+    background-color: #fff;
+}
+
+.header__shop__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #767272;
+    margin-bottom: 35px;
+}
+
+.header__device__photo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.header__item__device {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__device__title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.header__device__price {
+
+    color: #4191FF;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.header__device__price span {
+    padding: 3px 10px;
+    background: #EAF6FF;
+}
+
+.header__item__btn {
+    display: flex;
+}
+
+.header__btn-some {
+    width: 20px;
+    height: 20px;
+    background: #3C44B1;
+    border-radius: 2px;
+    position: relative;
+}
+
+.header__btn-some:hover {
+    background-color: #102243;
+}
+
+.header__btn-some::before {
+    content: '';
+    width: 10px;
+    height: 20px;
+    background-image: url(../../../assets/img/arrow_left.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 0;
+}
+
+.btn__plus::before {
+    background-image: url(../../../assets/img/arrow_right.svg);
+}
+
+.header__item__btn p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #4191FF;
+    margin: 0 10px;
+}
+
+.header__btn-del {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: rgba(248, 50, 69, .15);
+    position: relative;
+    margin-left: 25px;
+}
+
+.header__btn-del:hover {
+    background-color: rgba(248, 50, 69, .55);
+}
+
+.header__btn-del::before {
+    content: '';
+    width: 10px;
+    height: 20px;
+    background-image: url(../../../assets/img/delete_cart.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.header__shop__inner {
+    display: flex;
+    justify-content: center;
+}
+
+.header__shop__total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #767272;
+    padding: 20px 41px;
+    background: #EAF6FF;
+    position: relative;
+    z-index: 4;
+}
+
+.header__shop__total span {
+    font-weight: 700;
+    color: #000000;
+}
+
+.header__btn-cart {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #3C44B1;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.header__btn-cart:hover {
+    background-color: #102243;
+}
+
+.header__shop__btn {
+    position: relative;
+    z-index: 4;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.cart-nothing {
+    padding: 25px 0;
+    background-color: #fff;
+    border: 1px solid #E2E2E2;
+    border-radius: 5px;
+}
+
+.cart-nothing h2 {
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 480px) {
+    .header__shop {
+        width: 435px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .header__shop__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

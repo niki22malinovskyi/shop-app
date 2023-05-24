@@ -1,0 +1,120 @@
+.catalog__list__item {
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.catalog-item {
+    padding: 10px 0 0;
+    display: block;
+    text-align: center;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.catalog-item__img img {
+    max-width: 200px;
+    height: 200px;
+    margin-bottom: 25px;
+}
+
+.catalog-item__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.catalog-item__stock {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #767272;
+    margin-bottom: 10px;
+}
+
+.catalog-item__stock span {
+    font-weight: 700;
+}
+
+.catalog-item__price {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #767272;
+    margin-bottom: 20px;
+}
+
+.catalog-item__price span {
+    font-weight: 700;
+}
+
+.catalog-item__button {
+    padding: 15px 0;
+    width: 150px;
+    background-color: #0E49B5;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.catalog-item__button:hover {
+    background-color: #102243;
+}
+
+.catalog-item__button:disabled {
+    background: #DDDDDD;
+    border-radius: 5px;
+    cursor: auto;
+}
+
+
+
+
+.catalog-item__footer {
+    background-color: #E0E0E0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px 20px 30px 45px;
+    position: relative;
+    z-index: -1;
+}
+
+
+.catalog-item__footer::before {
+    content: '';
+    width: 17px;
+    height: 16px;
+    background-image: url(../../../../assets/img/heart.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 20px;
+}
+
+.catalog-footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    color: #3B3E66;
+    margin-bottom: 5px;
+}
+
+
+.catalog-footer__wrap p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+}
+
+.catalog-footer__wrap p span {
+    font-weight: 700;
+    margin-right: 4px;
+}

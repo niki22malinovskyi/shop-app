@@ -1,0 +1,112 @@
+.catalog {
+    padding: 30px 0;
+}
+
+.catalog__search {
+    margin-bottom: 35px;
+}
+
+.catalog__search__wrap {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.catalog__search__input {
+    width: 100%;
+    height: 63px;
+    padding: 20px 40px;
+    padding-right: 70px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    border: 1px solid #DDDADA;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    background-color: transparent;
+    position: relative;
+    z-index: 0;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url(../../assets/img/search.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 10px;
+    bottom: 50%;
+    transform: translate(0, 50%);
+    z-index: -1;
+}
+
+.catalog__search__order {
+    width: 40px;
+    height: 40px;
+    background-color: #0E49B5;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: 50%;
+    transform: translate(0, 50%);
+}
+
+.catalog__search__btn {
+    display: block;
+    width: 150px;
+    height: 63px;
+    background-color: #0E49B5;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.catalog__search__order:hover, .catalog__search__btn:hover {
+    background-color: #102243;
+}
+
+.catalog__search__order img {
+    width: 19px;
+    height: 13px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.catalog__wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 580px) {
+    .catalog__wrap {
+        flex-direction: row;
+    }
+    .catalog__list {
+        margin: 0;
+        margin-right: -10px;
+    }
+    .catalog__search {
+        display: flex;
+    }
+    .catalog__search__wrap {
+        flex: auto;
+    }
+    .catalog__search__input{
+        border-radius: 5px 0 0 5px;
+    }
+    .catalog__search__btn {
+        border-radius: 0 5px 5px 0;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .catalog__list {
+        display: flex;
+    }
+    .catalog__list__item {
+        width: 50%;
+    }
+}
