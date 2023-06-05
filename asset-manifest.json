@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.4de375e3.css",
-    "main.js": "/static/js/main.d413c4f0.js",
-    "static/media/head_banner.jpg": "/static/media/head_banner.016d938387c6765a498a.jpg",
-    "static/media/logo.svg": "/static/media/logo.1b97ae4f8871e26c6466519572b9c486.svg",
-    "static/media/search.svg": "/static/media/search.8eefdf53b3287fc87040.svg",
-    "static/media/yes.svg": "/static/media/yes.e9901b913762edd3eccc.svg",
-    "static/media/heart.svg": "/static/media/heart.397167ab3fd82ca58cda.svg",
-    "static/media/no.svg": "/static/media/no.f0f21bbd52e5a147cdf0.svg",
-    "index.html": "/index.html",
-    "static/media/delete_cart.svg": "/static/media/delete_cart.68e59108433071a16b65.svg",
-    "static/media/sort.svg": "/static/media/sort.c1159796463c91dd8f274e5f419b5a7b.svg",
-    "static/media/arrow_left.svg": "/static/media/arrow_left.a8fd3d4b783c31192b1c.svg",
-    "static/media/arrow_down.svg": "/static/media/arrow_down.1c9449f3c991ae2d9033.svg",
-    "static/media/arrow_right.svg": "/static/media/arrow_right.29c1e45052e827611cd5.svg",
-    "static/media/cheackbox.svg": "/static/media/cheackbox.bce83ef55df5e3c1015f.svg",
-    "static/media/arrow_up.svg": "/static/media/arrow_up.718630f30f0d65b7870e.svg",
-    "main.4de375e3.css.map": "/static/css/main.4de375e3.css.map",
-    "main.d413c4f0.js.map": "/static/js/main.d413c4f0.js.map"
+    "main.css": "/shop-app/static/css/main.8ca9c7b2.css",
+    "main.js": "/shop-app/static/js/main.00d2e2c9.js",
+    "static/media/head_banner.jpg": "/shop-app/static/media/head_banner.016d938387c6765a498a.jpg",
+    "static/media/logo.svg": "/shop-app/static/media/logo.1b97ae4f8871e26c6466519572b9c486.svg",
+    "static/media/search.svg": "/shop-app/static/media/search.8eefdf53b3287fc87040.svg",
+    "static/media/yes.svg": "/shop-app/static/media/yes.e9901b913762edd3eccc.svg",
+    "static/media/heart.svg": "/shop-app/static/media/heart.397167ab3fd82ca58cda.svg",
+    "static/media/no.svg": "/shop-app/static/media/no.f0f21bbd52e5a147cdf0.svg",
+    "index.html": "/shop-app/index.html",
+    "static/media/delete_cart.svg": "/shop-app/static/media/delete_cart.68e59108433071a16b65.svg",
+    "static/media/sort.svg": "/shop-app/static/media/sort.c1159796463c91dd8f274e5f419b5a7b.svg",
+    "static/media/arrow_left.svg": "/shop-app/static/media/arrow_left.a8fd3d4b783c31192b1c.svg",
+    "static/media/arrow_down.svg": "/shop-app/static/media/arrow_down.1c9449f3c991ae2d9033.svg",
+    "static/media/arrow_right.svg": "/shop-app/static/media/arrow_right.29c1e45052e827611cd5.svg",
+    "static/media/cheackbox.svg": "/shop-app/static/media/cheackbox.bce83ef55df5e3c1015f.svg",
+    "static/media/arrow_up.svg": "/shop-app/static/media/arrow_up.718630f30f0d65b7870e.svg",
+    "main.8ca9c7b2.css.map": "/shop-app/static/css/main.8ca9c7b2.css.map",
+    "main.00d2e2c9.js.map": "/shop-app/static/js/main.00d2e2c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.4de375e3.css",
-    "static/js/main.d413c4f0.js"
+    "static/css/main.8ca9c7b2.css",
+    "static/js/main.00d2e2c9.js"
   ]
 }
