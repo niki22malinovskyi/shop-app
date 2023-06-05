@@ -43,7 +43,7 @@ export const inisialState = {
   }
 }
 
-// "homepage": "https://niki22malinovskyi.github.io/shop-app",
+
 
 function App() {
 
