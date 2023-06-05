@@ -36,7 +36,6 @@ const showNothing = () => {
 
 
 function Cart(props) {
-    console.log(1);
 
     const { state } = useContext(Context);
     return (
