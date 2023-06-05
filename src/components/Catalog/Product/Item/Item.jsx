@@ -50,4 +50,4 @@ function Item({ items }) {
     )
 }
 
-export default React.memo(Item);
+export default Item;

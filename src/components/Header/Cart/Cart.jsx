@@ -50,4 +50,4 @@ function Cart(props) {
     )
 }
 
-export default React.memo(Cart);
+export default Cart;

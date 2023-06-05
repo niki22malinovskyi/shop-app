@@ -1,4 +1,4 @@
-import React, { useMemo, useReducer } from "react";
+import React, { useReducer } from "react";
 
 import "./App.css";
 
@@ -13,40 +13,41 @@ import items from "./assets/items/items";
 export const Context = React.createContext();
 
 
+export const inisialState = {
+  product: items,
+  card: {
+    items:[],
+    totalProducts:0,
+    totalPrice:0
+  },
+  filters: {
+    search: {
+      value: ''
+    },
+    price: {
+      from: '',
+      to: ''
+    },
+    color: {
+      value: null
+    },
+    storage: {
+      value: null
+    },
+    os: {
+      value: null
+    },
+    display: {
+      value: null
+    }
+  }
+}
+
+// "homepage": "https://niki22malinovskyi.github.io/shop-app",
 
 function App() {
 
-  const inisialState = useMemo(() => (
-    {
-      product: items,
-      card: {
-        items:[],
-        totalProducts:0,
-        totalPrice:0
-      },
-      filters: {
-        search: {
-          value: ''
-        },
-        price: {
-          from: '',
-          to: ''
-        },
-        color: {
-          value: null
-        },
-        storage: {
-          value: null
-        },
-        os: {
-          value: null
-        },
-        display: {
-          value: null
-        }
-      }
-    }
-  ), []);
+  
 
   const [state, dispatch] = useReducer(reducer, inisialState);
 

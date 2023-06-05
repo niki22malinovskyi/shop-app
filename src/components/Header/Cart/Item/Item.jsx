@@ -47,4 +47,4 @@ function Item({ item }) {
     )
 }
 
-export default React.memo(Item);
+export default Item;

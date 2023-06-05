@@ -72,4 +72,4 @@ function Modal({ active, setActive, items }) {
     )
 }
 
-export default React.memo(Modal);
+export default Modal;

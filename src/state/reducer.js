@@ -156,16 +156,19 @@ export default function (state, action) {
 
        };
     case "ascendingItems":
+
+
       return {
         ...state,
         product: state.product.sort((a, b) => a.price - b.price),
       };
     case "descendingItems":
+
       return {
         ...state,
         product: state.product.sort((a, b) => b.price - a.price),
       };
     default:
-      return { ...state };
+      return {...state};
   }
 }
