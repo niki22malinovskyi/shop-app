@@ -1,18 +1,22 @@
-import React, { useState } from 'react';
+import React, { useCallback, useContext, useState } from 'react';
 
 import './Header.css';
 
 import Logo from '../../assets/img/logo.svg';
 import Cart from './Cart/Cart';
+import { Context } from '../../App';
 
 function Header() {
 
+    const { state } = useContext(Context);
 
     const [popup, setPopup] = useState(false);
 
-    const popupFunc = () => {
-        return setPopup(!popup);
-    }
+    const popupFunc = useCallback(
+        () => {
+            setPopup(!popup);
+        }, [popup])
+    
     return (
         <header className="header">
             <div className="container">
@@ -24,7 +28,7 @@ function Header() {
                         <button
                             className="header__btn"
                             onClick={popupFunc}
-                        ></button>
+                        ><span>{`${state.card.totalProducts}`}</span></button>
                     </div>
                     <Cart props={popup} />
                 </div>

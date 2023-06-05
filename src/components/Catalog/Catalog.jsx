@@ -54,7 +54,7 @@ function Catalog() {
               type: "filteredItems"
             })}}
             
-          >poshuk</button>
+          >Search</button>
         </div>
         <div className="catalog__wrap">
           <Aside />

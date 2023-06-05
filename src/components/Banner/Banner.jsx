@@ -9,7 +9,7 @@ function Banner({props}) {
             <div className="banner__inner">
                 <h1 className="banner__title">MacBook Pro 16</h1>
                 <div className="banner__link">
-                    <a href="/#">Add to cart?</a>
+                    <p className="banner__text">Add to cart?</p>
                 </div>
             </div>
         </div>

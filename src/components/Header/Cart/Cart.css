@@ -219,4 +219,7 @@
         align-items: center;
         justify-content: space-around;
     }
+    .header__item__device{
+        flex: 1;
+    }
 }

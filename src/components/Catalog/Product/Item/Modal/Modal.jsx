@@ -1,9 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 
 import './Modal.css';
+import { Context } from '../../../../../App';
 
 
 function Modal({ active, setActive, items }) {
+
+    const {dispatch} = useContext(Context);
 
     useEffect(() => {
         if (active === true) {
@@ -54,6 +57,13 @@ function Modal({ active, setActive, items }) {
                         <div className="modal__item__stock">{`Stock: ${items.orderInfo.inStock} pcs.`}</div>
                         <button className="catalog-item__button"
                             disabled={items.orderInfo.inStock ? 0 : 1}
+                            onClick={
+                                () => {
+                                    dispatch({
+                                        type: "addCart",
+                                        payload: items.id
+                                    })
+                                }}
                         >Add to cart</button>
                     </div>
                 </div>
@@ -62,4 +72,4 @@ function Modal({ active, setActive, items }) {
     )
 }
 
-export default Modal;
+export default React.memo(Modal);

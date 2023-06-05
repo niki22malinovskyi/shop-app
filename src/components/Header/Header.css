@@ -12,6 +12,20 @@
     margin-left: auto;
 }
 
+.header__btn span {
+    width: 25px;
+    height: 25px;
+    background: #0E49B5;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: -5px;
+    left: -10px;
+}
+
 .header__btn:hover {
     background-color: rgba(0, 0, 0, 0.15);
 }
@@ -39,4 +53,3 @@
 .header__wrap__btn {
     width: 50%;
 }
-

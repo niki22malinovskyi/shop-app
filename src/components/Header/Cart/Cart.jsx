@@ -1,10 +1,9 @@
-
+import React, { useContext } from 'react';
 
 
 import './Cart.css';
 import Item from './Item/Item';
 import { Context } from '../../../App';
-import { useContext } from 'react';
 
 
 
@@ -37,7 +36,9 @@ const showNothing = () => {
 
 
 function Cart(props) {
-    const { dispatch, state } = useContext(Context);
+    console.log(1);
+
+    const { state } = useContext(Context);
     return (
         <div className={props.props ? "header__shop active" : "header__shop"}>
             {
@@ -50,4 +51,4 @@ function Cart(props) {
     )
 }
 
-export default Cart
+export default React.memo(Cart);

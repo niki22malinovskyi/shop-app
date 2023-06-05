@@ -22,4 +22,4 @@ function Product({items}) {
     )
 }
 
-export default Product;
+export default React.memo(Product);

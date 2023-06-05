@@ -5,7 +5,8 @@ import { Context } from '../../../../App';
 function Item({ item }) {
 
     const { dispatch } = useContext(Context);
-    
+
+
     return (
         <div className="header__shop__item">
             <div className="header__item__device">
@@ -46,4 +47,4 @@ function Item({ item }) {
     )
 }
 
-export default Item;
+export default React.memo(Item);

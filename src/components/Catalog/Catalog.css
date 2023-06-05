@@ -62,6 +62,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
+    text-transform: uppercase;
 }
 
 .catalog__search__order:hover, .catalog__search__btn:hover {

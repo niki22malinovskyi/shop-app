@@ -18,13 +18,12 @@ function Item({ items }) {
                         <img src={`${items.imgUrl}`} alt={`${items.name}`} />
                     </div>
                     <h3 className="catalog-item__title">{`${items.name}`}</h3>
-                    <p className="catalog-item__stock"> <span>{`${items.orderInfo.inStock}`}</span> left in stock</p>
+                    <p className={items.orderInfo.inStock ? "catalog-item__stock item__stock__true" : "catalog-item__stock item__stock__false"}> <span>{`${items.orderInfo.inStock}`}</span> left in stock</p>
                     <p className="catalog-item__price">Price: <span>{`${items.price}`}</span>$</p>
                     <button className="catalog-item__button"
                         disabled={items.orderInfo.inStock ? 0 : 1}
                         onClick={
                             (e) => {
-                                console.log(items)
                                 e.stopPropagation();
                                 dispatch({
                                     type: "addCart",
@@ -51,4 +50,4 @@ function Item({ items }) {
     )
 }
 
-export default Item;
+export default React.memo(Item);
